@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #F5F1EB;
+    --color-text: #111111;
+  }
+
+  .dark {
+    --color-bg: #0E0E0E;
+    --color-text: #E5E5E5;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-white px-8 py-3 uppercase tracking-widest text-sm font-medium transition-all duration-300 hover:bg-[#b5952f] hover:-translate-y-1 hover:shadow-lg inline-flex items-center justify-center;
+  }
+
+  .btn-outline {
+    @apply border border-gold text-gold px-8 py-3 uppercase tracking-widest text-sm font-medium transition-all duration-300 hover:bg-gold hover:text-white hover:-translate-y-1 inline-flex items-center justify-center;
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-md border-b border-white/10;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
