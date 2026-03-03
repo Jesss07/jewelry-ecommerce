@@ -35,7 +35,7 @@ export default function ShopPage() {
                     <div className="w-24 h-[1px] bg-[#D4AF37] mx-auto"></div>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">                    {products.map((product) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">                    {products.map((product) => (
                     <div key={product.id} className="group flex flex-col bg-neutral-900 border border-neutral-800 rounded-lg overflow-hidden hover:border-[#D4AF37]/50 transition-colors duration-300">
                         <div className="relative w-full h-64 bg-neutral-800 overflow-hidden flex items-center justify-center">
                             {/* Use standard img to handle placeholder paths without Next Image errors */}
