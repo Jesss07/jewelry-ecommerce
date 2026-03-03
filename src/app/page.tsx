@@ -124,7 +124,7 @@ export default function Home() {
       {/* Brand Story Split */}
       <section className="py-24 bg-white border-y border-gold/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -196,7 +196,7 @@ export default function Home() {
             <h2 className="font-playfair text-4xl text-dark mb-4">Client Expressions</h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { name: "Eleanor V.", city: "New York", quote: "The craftsmanship is simply unparalleled. My engagement ring from LUMIÈRE catches the light beautifully." },
               { name: "Sophia M.", city: "London", quote: "An exquisite experience from start to finish. The personalization and the breathtaking diamond pendant are pure luxury." },
